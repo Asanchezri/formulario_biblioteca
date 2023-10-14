@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario_libreria</title>
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+<header>
+<h1>Biblioteca Alfredo</h1>
+<h2>Gestor de reservas de libros</h2>
+</header>
+
+<body>
+    
+    <form>
+        <h3>Crear nuevo usuario</h3>
+        <label for="sesion">Nombre y apellidos: </label>
+        <input id="sesion" type="text">
+        <label for="id">Usuario:</label>
+        <input type="text" id="id">
+        <label for="dni">DNI:</label>
+        <input id="dni" type="file">
+        <label for="nacimiento">Fecha de nacimiento:</label>
+        <input type="date">
+        <label for="telefono">Número de teléfono:</label>
+        <input type="tel" id="telefono" maxlength="9" minlength="9">
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email">
+        <button type="submit">Crear usuario</button>
+        <input type="reset">
+    </form>
+
+<form>
+<h3>Iniciar sesión</h3>
+
+    <label for="usuario">Usuario:</label>
+    <input type="text" id="Nombre y apellidos" required>
+    <button type="submit">Iniciar sesión</button>
+    <input type="reset">
+</form>
+
+<form>
+<h3>Detalles del libro</h3>
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" required>
+        <label for="autor">Autor:</label>
+        <input type="text" id="autor" required>
+        <label for="isbn">ISBN:</label>
+        <input type="text" id="isbn" maxlength="13" minlength="13" required>
+        <label for="fecha">Fecha prestamo:</label>
+        <input type="datetime-local" id="fecha" required>
+        <label for="vuelta">Fecha devolución:</label>
+        <input type="date" id="vuelta" required>
+        <p>Género:
+        <select name="Género" id="genero" required>
+            <option>Terror</option>
+            <option>Amor</option>
+            <option>Aventuras</option>
+            <option>Acción</option>
+            <option>Historia</option>
+            <option>Autobiografía</option>
+        </select>
+        </p>
+        <button type="submit">Prestar libro</button>
+
+    </form>
+
+</body>
+
+
+</html>
