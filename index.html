@@ -8,13 +8,18 @@
     <link rel="stylesheet" href="./estilos.css">
 </head>
 <header>
-<h1>Biblioteca Alfredo</h1>
+<h1>Biblioteca Alfredo</h1> 
 <h2>Gestor de reservas de libros</h2>
+<form>
+    <label for="buscador">Buscar en la página web</label>
+    <input type="search" id="buscador">
+</form>
+
 </header>
 
 <body>
-    
-    <form>
+
+    <form method="get">
         <h3>Crear nuevo usuario</h3>
         <label for="sesion">Nombre y apellidos: </label>
         <input id="sesion" type="text">
@@ -32,7 +37,7 @@
         <input type="reset">
     </form>
 
-<form>
+<form method="get">
 <h3>Iniciar sesión</h3>
 
     <label for="usuario">Usuario:</label>
@@ -41,7 +46,7 @@
     <input type="reset">
 </form>
 
-<form>
+<form method="get">
 <h3>Detalles del libro</h3>
         <label for="titulo">Título:</label>
         <input type="text" id="titulo" required>
@@ -55,16 +60,16 @@
         <input type="date" id="vuelta" required>
         <p>Género:
         <select name="Género" id="genero" required>
-            <option>Terror</option>
-            <option>Amor</option>
-            <option>Aventuras</option>
-            <option>Acción</option>
-            <option>Historia</option>
-            <option>Autobiografía</option>
+            <option>Narrativa</option>
+            <option>Lírica</option>
+            <option>Dramático</option>
+            <option>Didáctico</option>
         </select>
+        <label for="Observaciones">Observaciones</label>
+        <input type="text" id="Observaciones">
         </p>
         <button type="submit">Prestar libro</button>
-
+        <input type="reset">
     </form>
 
 </body>
